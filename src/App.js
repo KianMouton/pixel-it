@@ -1,10 +1,12 @@
-
+import Navbar from './components/navbar.js';
+import Catalogue from './components/catalogue.js';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <p>hello world</p>
+    <div>
+      <Navbar />
+      <Catalogue />
     </div>
   );
 }
