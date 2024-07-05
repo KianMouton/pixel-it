@@ -3,7 +3,7 @@ function Catalogue() {
   return (
     <div className="catalogue">
       <h2 className="product-header">check out what we have to offer</h2>
-        <div className="products">
+        <div className="products-list">
           <a href="a">hats</a>
           <a href="a">shirts</a>
           <a href="a">hoodies</a>
