@@ -55,15 +55,16 @@
   flex-wrap: wrap;
 }
 
-.products a {
+.products-list button {
   color: black;
+  border: transparent;
   text-decoration: none;
   transition: 0.2s ease-in-out;
+  font-weight: bold;
 }
 
-.products a:hover {
+.products-list button:hover {
   color: rgb(158, 43, 158);
-  font-weight: bold;
 }
 
 .product {
@@ -75,4 +76,8 @@
   margin: 30px 30px 30px 30px;
   padding-bottom: 10px;
   border-radius: 10px;
+}
+
+.selected-type {
+  text-align: center;
 }
