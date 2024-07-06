@@ -72,8 +72,52 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 })}
             </div>
         )
-    }
-    else {
+    } else if (showHoodies) {
+        return (
+            <div className="products">
+                <h3 className="selected-type">Hoodies</h3>
+                {products.filter(product => product.type === 'hoodie').map((product, i) => {
+                    return (
+                        <div key={product.id} className="product">
+                            <h3>{product.name}</h3>
+                            <img src={product.image} alt="hat"></img>
+                            <p>Price: ${product.price}</p>
+                        </div>
+                    )
+                })}
+            </div>
+        )
+    } else if (showStickers) {
+        return (
+            <div className="products">
+                <h3 className="selected-type">Stickers</h3>
+                {products.filter(product => product.type === 'sticker').map((product, i) => {
+                    return (
+                        <div key={product.id} className="product">
+                            <h3>{product.name}</h3>
+                            <img src={product.image} alt="hat"></img>
+                            <p>Price: ${product.price}</p>
+                        </div>
+                    )
+                })}
+            </div>
+        )
+    } else if (showBag) {
+        return (
+            <div className="products">
+                <h3 className="selected-type">Bags</h3>
+                {products.filter(product => product.type === 'bag').map((product, i) => {
+                    return (
+                        <div key={product.id} className="product">
+                            <h3>{product.name}</h3>
+                            <img src={product.image} alt="hat"></img>
+                            <p>Price: ${product.price}</p>
+                        </div>
+                    )
+                })}
+            </div>
+        )
+    } else {
         return (
             <div>
                 <div className="products">

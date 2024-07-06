@@ -5,30 +5,50 @@ function Catalogue() {
   
   const [ showHat, setShowHat ] = useState(false);
   const [ showShirt, setShowShirt ] = useState(false);
-  const [ showHoodies, setShowhoodies ] = useState(false);
+  const [ showHoodies, setShowHoodies ] = useState(false);
   const [ showStickers, setShowStickers ] = useState(false);
   const [ showBag, setShowBag ] = useState(false);
 
   //shows only hats
   const handleHats = () => {
-    setShowHat(!showHat);
-  }
+    setShowShirt(false);
+    setShowHoodies(false);
+    setShowStickers(false);
+    setShowBag(false);
+    setShowHat(true);
+  };
 
   const handleShirt = () => {
-    setShowShirt(!showShirt);
-  }
+    setShowHat(false);
+    setShowHoodies(false);
+    setShowStickers(false);
+    setShowBag(false);
+    setShowShirt(true);
+  };
 
   const handleHoodies = () => {
-    setShowhoodies(!showHoodies);
-  }
+    setShowHat(false);
+    setShowShirt(false);
+    setShowStickers(false);
+    setShowBag(false);
+    setShowHoodies(true);
+  };
 
   const handleStickers = () => {
-    setShowStickers(!showStickers);
-  }
+    setShowHat(false);
+    setShowShirt(false);
+    setShowHoodies(false);
+    setShowBag(false);
+    setShowStickers(true);
+  };
 
   const handleBag = () => {
-    setShowBag(!showBag);
-  }
+    setShowHat(false);
+    setShowShirt(false);
+    setShowStickers(false);
+    setShowHoodies(false);
+    setShowBag(true);
+  };
 
   return (
     <div>
@@ -45,6 +65,6 @@ function Catalogue() {
         <Products showHat={showHat} showShirt={showShirt} showHoodies={showHoodies} showStickers={showStickers} showBag={showBag}/>
     </div>
     )
-}
+};
 
 export default Catalogue;
