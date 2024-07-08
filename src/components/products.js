@@ -39,7 +39,6 @@ const products = [
 ]
 
 function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
-
     console.log(showHat);
 
     if (showHat) {
@@ -51,7 +50,7 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                         <div key={product.id} className="product">
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="hat"></img>
-                            <p>Price: ${product.price}</p>
+                            <p>Price: R{product.price}</p>
                         </div>
                     )
                 })}
@@ -66,7 +65,7 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                         <div key={product.id} className="product">
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="shirt"></img>
-                            <p>Price: ${product.price}</p>
+                            <p>Price: R{product.price}</p>
                         </div>
                     )
                 })}
@@ -80,8 +79,8 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                     return (
                         <div key={product.id} className="product">
                             <h3>{product.name}</h3>
-                            <img src={product.image} alt="hat"></img>
-                            <p>Price: ${product.price}</p>
+                            <img src={product.image} alt="hoodie"></img>
+                            <p>Price: R{product.price}</p>
                         </div>
                     )
                 })}
@@ -95,8 +94,8 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                     return (
                         <div key={product.id} className="product">
                             <h3>{product.name}</h3>
-                            <img src={product.image} alt="hat"></img>
-                            <p>Price: ${product.price}</p>
+                            <img src={product.image} alt="sticker"></img>
+                            <p>Price: R{product.price}</p>
                         </div>
                     )
                 })}
@@ -110,8 +109,8 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                     return (
                         <div key={product.id} className="product">
                             <h3>{product.name}</h3>
-                            <img src={product.image} alt="hat"></img>
-                            <p>Price: ${product.price}</p>
+                            <img src={product.image} alt="bag"></img>
+                            <p>Price: R{product.price}</p>
                         </div>
                     )
                 })}
@@ -126,14 +125,14 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                             <div key={product.id} className="product">
                                 <h3>{product.name}</h3>
                                 <img src={product.image} alt="shirt"></img>
-                                <p>Price: ${product.price}</p>
+                                <p>Price: R{product.price}</p>
                             </div>
                         )
                     })}
                 </div>
             </div>
-            )
-        }
+        )
     }
+}
 
 export default Products;

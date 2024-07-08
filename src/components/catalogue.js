@@ -11,6 +11,10 @@ function Catalogue() {
 
   //shows only hats
   const handleHats = () => {
+    if (showHat) {
+      setShowHat(false);
+      return;
+    }
     setShowShirt(false);
     setShowHoodies(false);
     setShowStickers(false);
@@ -19,6 +23,10 @@ function Catalogue() {
   };
 
   const handleShirt = () => {
+    if (showShirt) {
+      setShowShirt(false);
+      return;
+    }
     setShowHat(false);
     setShowHoodies(false);
     setShowStickers(false);
@@ -27,6 +35,10 @@ function Catalogue() {
   };
 
   const handleHoodies = () => {
+    if (showHoodies) {
+      setShowHoodies(false);
+      return;
+    }
     setShowHat(false);
     setShowShirt(false);
     setShowStickers(false);
@@ -35,6 +47,10 @@ function Catalogue() {
   };
 
   const handleStickers = () => {
+    if (showStickers) {
+      setShowStickers(false);
+      return;
+    }
     setShowHat(false);
     setShowShirt(false);
     setShowHoodies(false);
@@ -43,6 +59,10 @@ function Catalogue() {
   };
 
   const handleBag = () => {
+    if (showBag) {
+      setShowBag(false);
+      return;
+    }
     setShowHat(false);
     setShowShirt(false);
     setShowStickers(false);
@@ -57,8 +77,8 @@ function Catalogue() {
         <div className="products-list">
           <button onClick={handleHats}>hats</button>
           <button onClick={handleShirt}>shirts</button>
-          <button onCLick={handleHoodies}>hoodies</button>
-          <button onCLick={handleStickers}>stickers</button>
+          <button onClick={handleHoodies}>hoodies</button>
+          <button onClick={handleStickers}>stickers</button>
           <button onClick={handleBag}>bags</button>
         </div> 
         </div>

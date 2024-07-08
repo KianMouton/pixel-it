@@ -75,7 +75,12 @@
   border: 2px solid black;
   margin: 30px 30px 30px 30px;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.product:hover {
+  box-shadow: 10px 10px 10px rgb(161, 32, 190);
 }
 
 .selected-type {
