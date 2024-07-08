@@ -41,13 +41,19 @@ const products = [
 function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
     console.log(showHat);
 
+    const handleProduct = () => {
+        // Add logic to handle product selection
+        console.log("clicked");
+        
+    }
+
     if (showHat) {
         return (
             <div className="products">
                 <h3 className="selected-type">Hats</h3>
                 {products.filter(product => product.type === 'hat').map((product, i) => {
                     return (
-                        <div key={product.id} className="product">
+                        <div onClick={() => handleProduct()} key={product.id} className="product">
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="hat"></img>
                             <p>Price: R{product.price}</p>
@@ -62,7 +68,7 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 <h3 className="selected-type">Shirts</h3>
                 {products.filter(product => product.type ==='shirt').map((product, i) => {
                     return (
-                        <div key={product.id} className="product">
+                        <div onClick={() => handleProduct()} key={product.id} className="product">
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="shirt"></img>
                             <p>Price: R{product.price}</p>
@@ -77,7 +83,7 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 <h3 className="selected-type">Hoodies</h3>
                 {products.filter(product => product.type === 'hoodie').map((product, i) => {
                     return (
-                        <div key={product.id} className="product">
+                        <div onClick={() => handleProduct()} key={product.id} className="product">
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="hoodie"></img>
                             <p>Price: R{product.price}</p>
@@ -92,7 +98,7 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 <h3 className="selected-type">Stickers</h3>
                 {products.filter(product => product.type === 'sticker').map((product, i) => {
                     return (
-                        <div key={product.id} className="product">
+                        <div onClick={() => handleProduct()} key={product.id} className="product">
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="sticker"></img>
                             <p>Price: R{product.price}</p>
@@ -107,7 +113,7 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 <h3 className="selected-type">Bags</h3>
                 {products.filter(product => product.type === 'bag').map((product, i) => {
                     return (
-                        <div key={product.id} className="product">
+                        <div onClick={() => handleProduct()} key={product.id} className="product">
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="bag"></img>
                             <p>Price: R{product.price}</p>
@@ -122,7 +128,7 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 <div className="products">
                     {products.map((product, i) => {
                         return (
-                            <div key={product.id} className="product">
+                            <div onClick={() => handleProduct()} key={product.id} className="product">
                                 <h3>{product.name}</h3>
                                 <img src={product.image} alt="shirt"></img>
                                 <p>Price: R{product.price}</p>

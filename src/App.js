@@ -1,12 +1,19 @@
-import Navbar from './components/navbar.js';
-import Catalogue from './components/catalogue.js';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+import Main from './components/mainLayout.js'
 import './App.css';
+
+const router = createBrowserRouter([
+  {
+  path: '/',
+  element: <Main />,
+  }
+]);
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Catalogue />
+      <RouterProvider router={router} />
     </div>
   );
 }

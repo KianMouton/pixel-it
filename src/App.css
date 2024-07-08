@@ -81,6 +81,7 @@
 
 .product:hover {
   box-shadow: 10px 10px 10px rgb(161, 32, 190);
+  transform: scale(1.02);
 }
 
 .selected-type {

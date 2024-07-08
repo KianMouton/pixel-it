@@ -8,8 +8,9 @@ function Navbar() {
         <div className="icons">
           <a href="https://www.facebook.com/PixelItCPT">
             <FontAwesomeIcon icon={faFacebook} size="2x" /> 
-          </a>  
+          </a>
         </div>
+        <catalogue />
       </div>
     )
 }
