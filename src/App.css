@@ -87,3 +87,13 @@
 .selected-type {
   text-align: center;
 }
+
+.product-link {
+  text-decoration: none;
+  color: black;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  background-color: rgb(69, 138, 208);
+  color: white;
+  padding: 10px;
+}

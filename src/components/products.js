@@ -1,4 +1,5 @@
 import Grey_Tshirt from '../images/Grey_Tshirt.jpg';
+import { Link } from 'react-router-dom';
 
 const products = [
     {
@@ -44,7 +45,6 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
     const handleProduct = () => {
         // Add logic to handle product selection
         console.log("clicked");
-        
     }
 
     if (showHat) {
@@ -132,6 +132,7 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                                 <h3>{product.name}</h3>
                                 <img src={product.image} alt="shirt"></img>
                                 <p>Price: R{product.price}</p>
+                                <Link className="product-link" to='/productPage'>product page</Link>
                             </div>
                         )
                     })}
