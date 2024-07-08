@@ -128,11 +128,12 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 <div className="products">
                     {products.map((product, i) => {
                         return (
-                            <div onClick={() => handleProduct()} key={product.id} className="product">
+                            <div key={product.id} className="product">
+                                <Link className="product-link" to={`/productPage/${product.id}`}>
                                 <h3>{product.name}</h3>
                                 <img src={product.image} alt="shirt"></img>
                                 <p>Price: R{product.price}</p>
-                                <Link className="product-link" to='/productPage'>product page</Link>
+                                </Link>
                             </div>
                         )
                     })}
