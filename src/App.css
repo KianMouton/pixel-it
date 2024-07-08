@@ -15,6 +15,7 @@
 #pixel-logo {
   margin-left: 30px;
   color: white;
+  text-decoration: none;
 }
 
 .icons {
@@ -61,6 +62,7 @@
   text-decoration: none;
   transition: 0.2s ease-in-out;
   font-weight: bold;
+  background-color: white; 
 }
 
 .products-list button:hover {
@@ -91,5 +93,23 @@
 .product-link {
   text-decoration: none;
   color: black;
+  text-align: center;
+}
+
+/* productPage css */
+.product-Page {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-Page h1 {
+  text-align: center;
+}
+
+.product-Page img {
+  width: 70%;
+}
+
+.product-Page p {
   text-align: center;
 }

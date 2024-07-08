@@ -8,6 +8,7 @@ const products = [
         type: 'shirt',
         name: "shirt",
         price: 50,
+        alt: "shirt",
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ const products = [
         type: 'hat',
         name: "hat",
         price: 100,
+        alt: 'hat',
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ const products = [
         type: 'hoodie',
         name: "hoodie",
         price: 100,
+        alt: 'hoodie',
     },
     {
         id: 4,
@@ -29,6 +32,7 @@ const products = [
         type: 'sticker',
         name: "sticker",
         price: 100,
+        alt: 'sticker',
     },
     {
         id: 5,
@@ -36,6 +40,7 @@ const products = [
         type: 'bag',
         name: "bag",
         price: 100,
+        alt: 'bag',
     },
 ]
 
@@ -144,3 +149,4 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
 }
 
 export default Products;
+export { products };
