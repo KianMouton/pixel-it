@@ -100,6 +100,7 @@
 .product-Page {
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .product-Page h1 {
@@ -107,9 +108,37 @@
 }
 
 .product-Page img {
-  width: 70%;
+  width: 100%;
 }
 
 .product-Page p {
   text-align: center;
+}
+
+.product-Page label {
+  text-align: center;
+}
+
+.product-Page input {
+  padding: 10px;
+  border: 1px solid #8217e7;
+  border-radius: 10px;
+}
+
+.product-Page .description {
+  border: 2px solid black;
+  margin: 30px 30px 30px 30px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top: 2px solid rgb(62, 5, 106);
+  background-color: pink;
+  border-bottom: 2px solid rgb(62, 5, 106);
 }

@@ -9,6 +9,7 @@ const products = [
         name: "shirt",
         price: 50,
         alt: "shirt",
+        description: "A great shirt",
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ const products = [
         name: "hat",
         price: 100,
         alt: 'hat',
+        description: "A great hat",
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ const products = [
         name: "hoodie",
         price: 100,
         alt: 'hoodie',
+        description: "A great hoodie",
     },
     {
         id: 4,
@@ -33,6 +36,7 @@ const products = [
         name: "sticker",
         price: 100,
         alt: 'sticker',
+        description: "A great sticker",
     },
     {
         id: 5,
@@ -41,6 +45,7 @@ const products = [
         name: "bag",
         price: 100,
         alt: 'bag',
+        description: "A great bag",
     },
 ]
 
@@ -59,9 +64,11 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 {products.filter(product => product.type === 'hat').map((product, i) => {
                     return (
                         <div onClick={() => handleProduct()} key={product.id} className="product">
+                            <Link className="product-link" to={`/productPage/${product.id}`}>
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="hat"></img>
                             <p>Price: R{product.price}</p>
+                            </Link>
                         </div>
                     )
                 })}
@@ -74,9 +81,11 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 {products.filter(product => product.type ==='shirt').map((product, i) => {
                     return (
                         <div onClick={() => handleProduct()} key={product.id} className="product">
+                            <Link className="product-link" to={`/productPage/${product.id}`}>
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="shirt"></img>
                             <p>Price: R{product.price}</p>
+                            </Link>
                         </div>
                     )
                 })}
@@ -89,9 +98,11 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 {products.filter(product => product.type === 'hoodie').map((product, i) => {
                     return (
                         <div onClick={() => handleProduct()} key={product.id} className="product">
+                            <Link className="product-link" to={`/productPage/${product.id}`}>
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="hoodie"></img>
                             <p>Price: R{product.price}</p>
+                            </Link>
                         </div>
                     )
                 })}
@@ -104,9 +115,11 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 {products.filter(product => product.type === 'sticker').map((product, i) => {
                     return (
                         <div onClick={() => handleProduct()} key={product.id} className="product">
+                            <Link className="product-link" to={`/productPage/${product.id}`}>
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="sticker"></img>
                             <p>Price: R{product.price}</p>
+                            </Link>
                         </div>
                     )
                 })}
@@ -119,9 +132,11 @@ function Products({ showHat, showShirt, showHoodies, showStickers, showBag }) {
                 {products.filter(product => product.type === 'bag').map((product, i) => {
                     return (
                         <div onClick={() => handleProduct()} key={product.id} className="product">
+                            <Link className="product-link" to={`/productPage/${product.id}`}>
                             <h3>{product.name}</h3>
                             <img src={product.image} alt="bag"></img>
                             <p>Price: R{product.price}</p>
+                            </Link>
                         </div>
                     )
                 })}
