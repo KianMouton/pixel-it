@@ -142,3 +142,22 @@
   background-color: pink;
   border-bottom: 2px solid rgb(62, 5, 106);
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top: 2px solid rgb(62, 5, 106);
+  background-color: pink;
+  border-bottom: 2px solid rgb(62, 5, 106);
+}
+
+footer a {
+  transition: 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: rgb(0, 0, 0);
+}
