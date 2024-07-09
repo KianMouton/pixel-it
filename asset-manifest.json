@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pixel-it/static/css/main.b8faa9df.css",
+    "main.js": "/pixel-it/static/js/main.de3ce4c3.js",
+    "static/js/453.f4d6796b.chunk.js": "/pixel-it/static/js/453.f4d6796b.chunk.js",
+    "static/media/Grey_Tshirt.jpg": "/pixel-it/static/media/Grey_Tshirt.0f4f5956d7d3d34a86aa.jpg",
+    "index.html": "/pixel-it/index.html",
+    "main.b8faa9df.css.map": "/pixel-it/static/css/main.b8faa9df.css.map",
+    "main.de3ce4c3.js.map": "/pixel-it/static/js/main.de3ce4c3.js.map",
+    "453.f4d6796b.chunk.js.map": "/pixel-it/static/js/453.f4d6796b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8faa9df.css",
+    "static/js/main.de3ce4c3.js"
+  ]
+}
